@@ -6,7 +6,7 @@ const Portfolio = () => {
     <div className="min-h-screen bg-gray-100 text-gray-800 p-6">
       <section className="text-center py-20">
         <h1 className="text-4xl font-bold">Welcome to My Portfolio</h1>
-        <p className="text-lg mt-4">Software Engineer | Problem Solver | Innovator</p>
+        <p className="text-lg mt-4">Aspiring Software Engineer | 2nd Year Computer Science Student @UoH</p>
       </section>
       <section className="py-20">
         <h2 className="text-3xl font-semibold text-center">Projects</h2>
