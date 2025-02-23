@@ -1,26 +1,22 @@
 {
-  "name": "portfolio-website",
-  "version": "1.0.0",
+  "name": "portfolio_nextjs",
+  "version": "0.1.0",
   "private": true,
-  "homepage": "https://jds29.com",
-  "dependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "react-scripts": "latest",
-    "tailwindcss": "^3.0.0",
-    "gh-pages": "^5.0.0"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "dev": "next dev",
+    "build": "next build && next export",
+    "start": "next start"
   },
-  "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+  "dependencies": {
+    "@babel/runtime": "^7.26.9",
+    "next": "^15.1.7",
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-icons": "^4.2.0",
+    "styled-components": "^5.3.0",
+    "styled-normalize": "^8.0.7"
   },
-  "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
-    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4"
   }
 }
