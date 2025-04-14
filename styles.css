@@ -328,7 +328,7 @@ section:first-of-type {
 .hero p {
     color: #e0e0e0;
     font-size: clamp(1.2rem, 3.5vw, 1.6rem);
-    max-width: 650px;
+    max-width: 675px;
     margin: 0 auto 35px auto;
     font-weight: 400; /* Regular weight */
     font-family: 'Inter', sans-serif;
@@ -386,6 +386,11 @@ section h2:after {
     /* font-style: italic; /* Inherited from body */
 }
 
+#about p.about-intro {
+    font-weight: 700; /* Use a bold weight (700 for Inter is common for bold) */
+    font-style: normal; /* Override the italic style from the body */
+}
+
 /* Projects Section */
 .projects-grid {
     display: grid;
@@ -421,11 +426,18 @@ section h2:after {
     font-style: italic; /* Placeholder text can remain italic */
 }
 
-.project-content {
-    padding: 25px;
+/* Project Description - Inherits italic from body */
+.project-content p {
+    color: #d0d0d0;
+    margin-bottom: 20px;
     flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    font-size: 1rem;
+    line-height: 1.7;
+    /* font-style: italic; /* Inherited from body */
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    /* Add the line below */
+    text-align: center;
 }
 
 /* Project Titles - Kept non-italic */
