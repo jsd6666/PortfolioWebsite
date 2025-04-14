@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Developer Portfolio</title>
-      
-        <!-- Inline critical CSS to hide all content on load -->
-        <style>
-          body.preload * {
-            opacity: 0;
-          }
-        </style>
-      
-        <link rel="stylesheet" href="styles.css">
-      </head>
-<body class="preload"> <div class="parallax-bg-container">
-        <div class="parallax-layer layer-back" id="p-layer-back"></div>
-        <div class="parallax-layer layer-mid" id="p-layer-mid"></div>
-        <div class="parallax-layer layer-fore" id="p-layer-fore"></div>
-        <div class="static-overlay"></div>
-    </div>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Developer Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" /> <style>
+        body.preload * {
+            opacity: 0;
+        }
+    </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="preload">
     <header>
         <div class="container header-container">
             <a href="#" class="logo">Joseph Smith</a>
             <div class="inline-menu-nav" id="inlineMenuNav">
-                 <nav>
+                <nav>
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
@@ -43,26 +42,63 @@
     <main>
         <section id="home" class="hero">
             <div class="container">
-                <h1>Hi,  I'm Joseph Smith</h1>
+                <h1>Hi, I'm Joseph Smith</h1>
                 <p>Software Developer specializing in C++, C#, and Flutter app development</p>
                 <a href="#projects" class="cta-button">View My Work</a>
             </div>
         </section>
 
         <section id="about">
-             <div class="container">
-                 <h2>About Me</h2>
-                 <p>Welcome to my portfolio! I'm a passionate software developer with expertise in C++, C#, and Flutter development. I focus on creating efficient, user-friendly applications across multiple platforms.</p>
-                 <p>With my experience in these powerful languages, I've worked on a wide range of projects from desktop applications to cross-platform mobile apps. My approach to development focuses on writing clean, maintainable code that delivers exceptional user experiences.</p>
-             </div>
+            <div class="container">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio! I'm a passionate software developer with expertise in C++, C#, and Flutter
+                    development. I focus on creating efficient, user-friendly applications across multiple platforms.</p>
+                <p>With my experience in these powerful languages, I've worked on a wide range of projects from desktop
+                    applications to cross-platform mobile apps. My approach to development focuses on writing clean,
+                    maintainable code that delivers exceptional user experiences.</p>
+            </div>
         </section>
         <section id="projects">
-             <div class="container">
+            <div class="container">
                 <h2>Featured Projects</h2>
                 <div class="projects-grid">
-                    <div class="project-card"> <div class="project-image">Project Image Placeholder</div> <div class="project-content"> <h3>C++ Game Engine</h3> <p>A lightweight 2D game engine built with C++ and OpenGL...</p> <div class="project-tags"> <span class="project-tag">C++</span> <span class="project-tag">OpenGL</span> <span class="project-tag">Game Dev</span> </div> </div> </div>
-                    <div class="project-card"> <div class="project-image">Project Image Placeholder</div> <div class="project-content"> <h3>C# Desktop Application</h3> <p>A productivity tool built with C# and WPF...</p> <div class="project-tags"> <span class="project-tag">C#</span> <span class="project-tag">WPF</span> <span class="project-tag">.NET</span> </div> </div> </div>
-                    <div class="project-card"> <div class="project-image">Project Image Placeholder</div> <div class="project-content"> <h3>Flutter Mobile App</h3> <p>A cross-platform mobile application...</p> <div class="project-tags"> <span class="project-tag">Flutter</span> <span class="project-tag">Dart</span> <span class="project-tag">Firebase</span> </div> </div> </div>
+                    <div class="project-card">
+                        <div class="project-image">Project Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>C++ Game Engine</h3>
+                            <p>A lightweight 2D game engine built with C++ and OpenGL...</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C++</span>
+                                <span class="project-tag">OpenGL</span>
+                                <span class="project-tag">Game Dev</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">Project Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>C# Desktop Application</h3>
+                            <p>A productivity tool built with C# and WPF...</p>
+                            <div class="project-tags">
+                                <span class="project-tag">C#</span>
+                                <span class="project-tag">WPF</span>
+                                <span class="project-tag">.NET</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">Project Image Placeholder</div>
+                        <div class="project-content">
+                            <h3>Study Buddy Web / Mobile App</h3>
+                            <p>A cross-platform web / mobile application built in flutter. Study Buddy allows students to
+                                make new friends from their phone.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Flutter</span>
+                                <span class="project-tag">Dart</span>
+                                <span class="project-tag">C#</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -70,19 +106,49 @@
             <div class="container">
                 <h2>Skills & Technologies</h2>
                 <div class="skills-container">
-                    <div class="skill-category"> <h3>Languages</h3> <ul class="skill-list"><li>C++</li><li>C#</li><li>Dart</li><li>JavaScript</li><li>SQL</li></ul> </div>
-                    <div class="skill-category"> <h3>Frameworks & Tools</h3> <ul class="skill-list"><li>Flutter</li><li>.NET Framework</li><li>WPF</li><li>Unity</li><li>Visual Studio</li></ul> </div>
-                    <div class="skill-category"> <h3>Other Skills</h3> <ul class="skill-list"><li>Git & GitHub</li><li>CI/CD</li><li>Cross-Platform Development</li><li>UI/UX Design</li><li>Agile Development</li></ul> </div>
+                    <div class="skill-category">
+                        <h3>Languages</h3>
+                        <ul class="skill-list">
+                            <li>C++</li>
+                            <li>C#</li>
+                            <li>Dart</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frameworks & Tools</h3>
+                        <ul class="skill-list">
+                            <li>Flutter</li>
+                            <li>.NET Framework</li>
+                            <li>WPF</li>
+                            <li>Unity</li>
+                            <li>Visual Studio</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Other Skills</h3>
+                        <ul class="skill-list">
+                            <li>Git & GitHub</li>
+                            <li>CI/CD</li>
+                            <li>Cross-Platform Development</li>
+                            <li>UI/UX Design</li>
+                            <li>Agile Development</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <section id="contact">
-             <div class="container">
+            <div class="container">
                 <h2>Get In Touch</h2>
                 <form class="contact-form">
-                    <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required></div>
-                    <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div>
-                    <div class="form-group"><label for="message">Message</label><textarea id="message" name="message" required></textarea></div>
+                    <div class="form-group"><label for="name">Name</label><input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email"
+                            required></div>
+                    <div class="form-group"><label for="message">Message</label><textarea id="message" name="message"
+                            required></textarea></div>
                     <button type="submit" class="submit-button">Send Message</button>
                 </form>
             </div>
@@ -92,10 +158,21 @@
     <footer>
         <div class="container">
             <p>&copy; 2025 Joseph Smith. All rights reserved.</p>
-            <div class="social-links"><a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Twitter</a></div>
+            <div class="social-links">
+                <a href="https://github.com/jsd6666" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/josephsmith29/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter Profile">
+                    <i class="fa-brands fa-x-twitter"></i>
+                </a>
+            </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
