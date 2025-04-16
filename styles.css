@@ -1,10 +1,18 @@
+/* ------------------------------ */
+/* Updated Typography */
+/* ------------------------------ */
+
+/* Import Fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600,700&family=Roboto:wght@400;500&display=swap');
+
 /* Reset and Base Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Set Inter as base font */
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-weight: 400;
+    font-style: normal; /* Changed to normal */
 }
 
 html {
@@ -52,19 +60,12 @@ body {
     position: relative;
     overflow-x: hidden;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
-
-    /* UPDATED Animated Gradient Background: Dark Blue / Slate Gray */
-    background: linear-gradient(-45deg, #2c3e50, #526575, #36454f, #1f3a5a); /* Dark Blue, Slate Gray, Dark Slate, Darker Blue */
+    background: linear-gradient(-45deg, #2c3e50, #526575, #36454f, #1f3a5a);
     background-size: 400% 400%;
     animation: gradientShift 15s ease infinite;
-
-    /* Set Inter font with italic style */
-    font-family: 'Inter', sans-serif;
-    font-weight: 400; /* Explicitly set weight */
-    font-style: italic; /* Apply italic style */
-
-    /* Old background-color commented out */
-    /* background-color: #222222; */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-weight: 400;
+    font-style: normal; /* Changed to normal */
 }
 
 body.menu-active {
@@ -112,7 +113,7 @@ header {
     color: #ffffff;
     text-decoration: none;
     z-index: 1;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
     font-style: normal; /* Override body italic style */
 }
 
@@ -147,7 +148,7 @@ header {
 }
 
 .menu-button.active span:nth-child(2) {
-    transform: translateX(-465px); /* Adjusted value from previous step */
+    transform: translateX(-452px); /* Adjusted value from previous step */
     opacity: 1;
     background-color: #ffffff;
     transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.2s ease;
@@ -205,7 +206,7 @@ body.menu-active .inline-menu-nav {
     text-decoration: none;
     border-radius: 4px;
     white-space: nowrap;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
     font-style: normal; /* Override body italic style */
     opacity: 0;
     transform: translateX(15px);
@@ -320,8 +321,9 @@ section:first-of-type {
     font-size: clamp(2.8rem, 7vw, 4.5rem);
     margin-bottom: 20px;
     font-weight: 700; /* Bold */
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+    font-style: normal; /* Changed to normal */
+    letter-spacing: -0.02em; /* Added letter-spacing */
 }
 
 /* Hero Paragraph - Inherits italic from body */
@@ -331,8 +333,8 @@ section:first-of-type {
     max-width: 675px;
     margin: 0 auto 35px auto;
     font-weight: 400; /* Regular weight */
-    font-family: 'Inter', sans-serif;
-    /* font-style: italic; /* Inherited from body */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 
@@ -340,16 +342,17 @@ section:first-of-type {
 section h2,
 section h3 {
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+    font-style: normal; /* Changed to normal */
+    letter-spacing: -0.01em; /* Slight tightening */
 }
 
 /* Section Paragraphs - Inherit italic from body */
 section p {
     color: #e0e0e0;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
     font-weight: 400;
-    /* font-style: italic; /* Inherited from body */
+    font-style: normal; /* Changed to normal */
 }
 
 section h2 {
@@ -383,7 +386,9 @@ section h2:after {
     margin-bottom: 15px;
     color: #e0e0e0;
     font-size: 1.1rem;
-    /* font-style: italic; /* Inherited from body */
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 #about p.about-intro {
@@ -433,11 +438,10 @@ section h2:after {
     flex-grow: 1;
     font-size: 1rem;
     line-height: 1.7;
-    /* font-style: italic; /* Inherited from body */
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    /* Add the line below */
     text-align: center;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-weight: 400;
+    font-style: normal; /* Changed to normal */
 }
 
 /* Project Titles - Kept non-italic */
@@ -447,8 +451,8 @@ section h2:after {
     font-weight: 600; /* Semi-bold */
     color: #ffffff;
     text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+    font-style: normal; /* Changed to normal */
 }
 
 /* Project Description - Inherits italic from body */
@@ -477,8 +481,8 @@ section h2:after {
     font-size: 0.85rem;
     font-weight: 500; /* Medium */
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 /* Skills Section */
@@ -503,8 +507,8 @@ section h2:after {
     color: #ffffff;
     text-align: center;
     position: relative;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+    font-style: normal; /* Changed to normal */
 }
 
 .skill-category h3::after {
@@ -538,8 +542,8 @@ section h2:after {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 5px 12px;
     border-radius: 4px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 /* Contact Section */
@@ -558,8 +562,8 @@ section h2:after {
     margin-bottom: 8px;
     font-weight: 500; /* Medium */
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 /* Form Inputs - Inherit italic style from body */
@@ -573,17 +577,17 @@ section h2:after {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
     background-color: rgba(0, 0, 0, 0.4);
     color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
     font-weight: 400; /* Ensure correct weight */
-    /* font-style: italic; /* Inherited from body */
+    font-style: normal; /* Changed to normal */
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
     color: rgba(255, 255, 255, 0.5);
     opacity: 1;
-    font-family: 'Inter', sans-serif;
-    font-style: italic; /* Placeholders often look good italic */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 .form-group input:focus,
@@ -615,8 +619,9 @@ section h2:after {
     box-shadow: none;
     text-align: center;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
-    font-style: normal; /* Override body italic */
+    font-family: 'Montserrat', sans-serif; /* Changed to Montserrat */
+    font-style: normal; /* Changed to normal */
+    letter-spacing: 0.01em; /* Slight spacing for emphasis */
 }
 
 .submit-button {
@@ -654,8 +659,8 @@ footer p {
     margin-bottom: 15px;
     font-size: 0.9rem;
     font-weight: 400;
-    font-family: 'Inter', sans-serif;
-    /* font-style: italic; /* Inherited from body */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
+    font-style: normal; /* Changed to normal */
 }
 
 /* Footer Social Icon Styling */
@@ -667,6 +672,7 @@ footer p {
     transition: color 0.3s ease;
     display: inline-block; /* Helps with spacing and alignment */
     font-style: normal; /* Override body italic style if needed */
+    font-family: 'Roboto', sans-serif; /* Changed to Roboto */
 }
 
 .social-links a:hover {
